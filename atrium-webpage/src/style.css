@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #ddd8d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container * {
+  margin: 20px 0;
+}
+.container .line-text {
+  position: relative;
+  display: inline-block;
+  font-size: 110px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke-width: 5.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 12px 15px #39dbc2, 13px 16px #606FA1, 14px 17px #606FA1, 15px 18px #606FA1, 16px 19px #606FA1, 17px 20px #606FA1, 18px 21px #606FA1, 19px 22px #606FA1, 20px 23px #606FA1, 21px 24px #606FA1, 22px 25px #606FA1, 23px 26px #606FA1, 24px 27px #606FA1, 25px 28px #606FA1;
+}
+
+#title {
+  align-items: center;
+}
+
+#test {
+  background-color: #606FA1;
+  font-size: large;
+  font-style: oblique;
+  display: inline;
+  width: auto;
+  height: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

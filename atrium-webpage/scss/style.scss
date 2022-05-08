@@ -1,0 +1,103 @@
+// Color
+$grey: #ddd8d4;
+$green: #39dbc2;
+$darkBlue: #606FA1;
+$yellow: #ffed28;
+$purple: #b028ff;
+$blue: #49A7FF;
+$red: #ff3838;
+$orange: #db7953;
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
+
+
+// Size
+$extra-large: 110px;
+$large: 84px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: $grey;
+  @include center;
+}
+
+.container {
+  
+  * {
+    margin: 20px 0;
+  }
+  
+  // Style 1, line text
+  .line-text {
+    $random-text: 'foreign terrace';
+    $stroke-width: $extra-large * 0.05;
+    position: relative;
+    display: inline-block;
+    font-size: $extra-large;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke-width: $stroke-width;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    white-space: nowrap;
+    $x: 12px;
+    $y: 15px;
+    $step: 1px;
+    @include center;
+        
+    text-shadow: $x $y $green,
+                 $x + $step $y + $step $darkBlue,
+                 $x + $step * 2 $y + $step * 2 $darkBlue,
+                 $x + $step * 3 $y + $step * 3 $darkBlue,
+                 $x + $step * 4 $y + $step * 4 $darkBlue,
+                 $x + $step * 5 $y + $step * 5 $darkBlue,
+                 $x + $step * 6 $y + $step * 6 $darkBlue,
+                 $x + $step * 7 $y + $step * 7 $darkBlue,
+                 $x + $step * 8 $y + $step * 8 $darkBlue,
+                 $x + $step * 9 $y + $step * 9 $darkBlue,
+                 $x + $step * 10 $y + $step * 10 $darkBlue,
+                 $x + $step * 11 $y + $step * 11 $darkBlue,
+                 $x + $step * 12 $y + $step * 12 $darkBlue,
+                 $x + $step * 13 $y + $step * 13 $darkBlue,
+                 // $x + $step * 14 $y + $step * 14 $darkBlue,
+                 // $x + $step * 15 $y + $step * 15 $darkBlue,
+                 // $x + $step * 16 $y + $step * 16 $darkBlue,
+                 // $x + $step * 17 $y + $step * 17 $darkBlue,
+                 // $x + $step * 18 $y + $step * 18 $darkBlue,
+                 // $x + $step * 19 $y + $step * 19 $darkBlue,
+                 // $x + $step * 20 $y + $step * 20 $darkBlue,
+                 // $x + $step * 21 $y + $step * 21 $darkBlue,
+  }
+}
+
+#title {
+  align-items: center;
+}
+
+#test{
+  background-color: $darkBlue;
+  font-size: large;
+  font-style: oblique;
+  display: inline;
+  width: auto;
+  height: 50%;
+}
